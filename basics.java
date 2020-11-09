@@ -5,10 +5,15 @@ class fruits {
         Scanner input = new Scanner(System.in);
         int x;
         int y;
-        System.out.println("Enter 2 numbers: ");
+        System.out.println("Basic calculator...");
+        System.out.println("Enter number 1: ");
         x = input.nextInt();
+        System.out.println("Enter number 2: ");
         y = input.nextInt();
-        System.out.println("The numbers are " + x + " and " + y);
+        System.out.println(" " + x + " + " + y + " = " + (x + y));
+        System.out.println(" " + x + " - " + y + " = " + (x - y));
+        System.out.println(" " + x + " * " + y + " = " + (x * y));
+        System.out.println(" " + x + " / " + y + " = " + (x / y));
 
     }
 }

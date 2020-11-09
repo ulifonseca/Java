@@ -1,14 +1,14 @@
-import java.util.function.DoublePredicate;
+import java.util.Scanner;
 
 class fruits {
     public static void main(String[] args) {
-        String name = "Ulises Fonseca Maya";
-        double quiz = 3.3;
-        boolean q = true;
-
-        System.out.println("Hello world " + name);
-        System.out.println(quiz);
-        System.out.println(q);
+        Scanner input = new Scanner(System.in);
+        int x;
+        int y;
+        System.out.println("Enter 2 numbers: ");
+        x = input.nextInt();
+        y = input.nextInt();
+        System.out.println("The numbers are " + x + " and " + y);
 
     }
 }

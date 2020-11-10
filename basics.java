@@ -1,16 +1,28 @@
 import java.util.*;
 
 class fruits {
-    public static void main(String[] args) {
-        int array2[] = { 10, 10, 10, 30 };
-        int sum = 0;
-        int counter = 0;
-        System.out.println("Index    Value");
-        for (int i : array2) {
-            System.out.println(" [" + (counter++) + "] ---> " + i);
-            sum += i;
-        }
-        System.out.println("\n  Sum : " + sum);
 
+    private static final int TOP_VALUE = 20;
+    public static final Random r = new Random();
+
+    public static void displayArray(int array[]) {
+        System.out.print("Array : [ ");
+        for (int i = 0; i < array.length; i++) {
+            System.out.printf("%d ", array[i]);
+        }
+        System.out.println("]");
+    }
+
+    public static void fillArray(int array[]) {
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (i % TOP_VALUE);
+        }
+    }
+
+    public static void main(String[] args) {
+        int array[] = { 10, 10, 10, 30 };
+        displayArray(array);
+        fillArray(array);
+        displayArray(array);
     }
 }

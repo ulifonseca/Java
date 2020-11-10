@@ -2,18 +2,13 @@ import java.util.*;
 
 class fruits {
     public static void main(String[] args) {
-        Scanner user1 = new Scanner(System.in);
-        System.out.println("Grades of the semester calculator");
-        int grades = 0;
-        double total = 0;
-        double avg;
-
-        do {
-            System.out.println("Enter grade " + (++grades) + " (0 to exit) :");
-            avg = user1.nextDouble();
-            total += avg;
-        } while (avg != 0);
-        System.out.println("Your average is: " + total / (--grades));
+        int array1[] = new int[10];
+        for (int i = 0; i < array1.length; i++) {
+            array1[i] = i + 1;
+        }
+        for (int i = 0; i < array1.length; i++) {
+            System.out.println("Index " + i + " --> " + array1[i]);
+        }
 
     }
 }

@@ -1,6 +1,12 @@
 class fruits {
     public static void main(String[] args) {
-        tuna t2 = new tuna("Miriam Maya");
-        t2.saying();
+        int age = 20;
+        if (age > 18) {
+            System.out.println("You are legal.");
+        } else if (age < 18) {
+            System.out.println("You are illegal.");
+        } else {
+            System.out.println("You are 18.");
+        }
     }
 }

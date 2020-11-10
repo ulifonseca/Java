@@ -25,6 +25,12 @@ class fruits {
         }
     }
 
+    public static void change(int array[]) {
+        for (int i = 0; i < array.length; i++) {
+            array[i] *= 2;
+        }
+    }
+
     public static void main(String[] args) {
         int array[] = { 10, 10, 10, 30 };
         displayArray(array);
@@ -34,6 +40,8 @@ class fruits {
         int max = 15;
         randomArray(array, max, min);
         displayArray(array);
-        
+        change(array);
+        displayArray(array);
+
     }
 }

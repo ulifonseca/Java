@@ -1,12 +1,6 @@
 class fruits {
     public static void main(String[] args) {
-        int age = 20;
-        if (age > 18) {
-            System.out.println("You are legal.");
-        } else if (age < 18) {
-            System.out.println("You are illegal.");
-        } else {
-            System.out.println("You are 18.");
-        }
+        int age = 18;
+        System.out.println(age > 18 ? "You are legal" : age < 18 ? "You are illegal" : "You are 18");
     }
 }

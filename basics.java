@@ -4,17 +4,18 @@ class fruits {
     public static void main(String[] args) {
         Scanner user1 = new Scanner(System.in);
         System.out.println("Grades of the semester calculator");
-        int grades;
+        int grades = 0;
         double total = 0;
         double avg;
-        System.out.print("Enter the number of subjects: ");
-        grades = user1.nextInt();
 
-        for (int i = 1; i <= grades; i++) {
-            System.out.println("Enter grade " + i + ": ");
+        do {
+            System.out.println("Enter grade " + (++grades) + " (0 to exit) :");
             avg = user1.nextDouble();
             total += avg;
-        }
+            if (avg == 0)
+                grades--;
+
+        } while (avg != 0);
         System.out.println("Your average is: " + total / grades);
 
     }

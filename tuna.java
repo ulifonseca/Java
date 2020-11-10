@@ -1,6 +1,10 @@
 public class tuna {
     private String name;
 
+    public tuna(String n) {
+        name = n;
+    }
+
     public void set_name(String n) {
         name = n;
     }

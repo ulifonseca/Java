@@ -19,10 +19,21 @@ class fruits {
         }
     }
 
+    public static void randomArray(int array[], int max, int min) {
+        for (int i = 0; i < array.length; i++) {
+            array[i] = r.nextInt(max - min + 1) + min;
+        }
+    }
+
     public static void main(String[] args) {
         int array[] = { 10, 10, 10, 30 };
         displayArray(array);
         fillArray(array);
         displayArray(array);
+        int min = 10;
+        int max = 15;
+        randomArray(array, max, min);
+        displayArray(array);
+        
     }
 }

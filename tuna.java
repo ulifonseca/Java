@@ -1,6 +1,6 @@
 public class tuna {
-    public void simple_message() {
-        System.out.println("Hello Miry, I love you");
+    public void simple_message(String name) {
+        System.out.println("Hello " + name + " , I love you");
     }
-    
+
 }

@@ -2,12 +2,12 @@ import java.util.*;
 
 class fruits {
     public static void main(String[] args) {
-        int array2[] = { 1, 2, 3, 4, 5 };
-        int sum =0;
+        int array2[] = { 10, 10, 10, 30 };
+        int sum = 0;
         for (int i : array2) {
-            sum+=i;
+            sum += i;
         }
-        System.out.println(x);
+        System.out.println("Sum : " + sum);
 
     }
 }

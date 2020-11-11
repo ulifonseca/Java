@@ -7,7 +7,6 @@ class fruits {
             array[i] += add;
         }
     }
-
     public static void main(String[] args) {
         int SIZE = 10;
         int array[] = new int[SIZE];

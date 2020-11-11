@@ -7,11 +7,9 @@ class fruits {
 
     public static double average(double... numbers) {
         double result = 0;
-        int count = 0;
         for (double i : numbers) {
             result += i;
-            count++;
         }
-        return result / count;
+        return result / numbers.length;
     }
 }

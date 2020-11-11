@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class orange {
-    private static final int TOP_VALUE = 20;
+    private static final int TOP_VALUE = 5;
     public static final Random r = new Random();
 
     public static void displayArray(int array[]) {
